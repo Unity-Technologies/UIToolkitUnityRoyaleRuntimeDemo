@@ -1,0 +1,40 @@
+.end-screen {
+    background-image: none;
+    justify-content: space-between;
+}
+
+.top-image {
+    background-image: url('/Assets/UI/EndScreenlogo.png');
+    -unity-background-scale-mode: scale-to-fit;
+    width: 238px;
+    height: 191px;
+    background-color: rgba(0, 0, 0, 0);
+    align-items: center;
+}
+
+.logo {
+    background-image: url('/Assets/UI/Elements/ui_logo.png');
+    height: 180px;
+    -unity-background-scale-mode: scale-to-fit;
+    justify-content: center;
+    width: 425px;
+    margin-top: -58px;
+}
+
+.labels-container {
+    -unity-text-align: upper-center;
+}
+
+.match-over-label {
+    background-color: rgba(0, 0, 0, 0);
+    -unity-font: url('/Assets/UI/Fonts/LilitaOne-Regular.ttf');
+    color: rgb(255, 255, 255);
+    font-size: 51px;
+}
+
+.winner-label {
+    background-color: rgba(0, 0, 0, 0);
+    -unity-font: url('/Assets/UI/Fonts/LilitaOne-Regular.ttf');
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+}

@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="screen" class="screen end-screen">
+        <Style src="Menu.uss" />
+        <Style src="EndScreen.uss" />
+        <ui:VisualElement name="header" style="align-items: center;">
+            <ui:VisualElement name="image" class="top-image" />
+            <ui:VisualElement name="logo" class="logo" />
+        </ui:VisualElement>
+        <ui:VisualElement name="labels-container" class="labels-container">
+            <ui:Label text="MATCH OVER!" name="match-over-label" class="match-over-label" />
+            <ui:Label text="AND THE WINNER IS..." name="winner-is-label" class="winner-label" />
+            <ui:Label text="TEAM BLUE!!" name="winner-label" class="winner-label" />
+        </ui:VisualElement>
+        <ui:Button name="main-menu-button" text="Main Menu" class="button" />
+    </ui:VisualElement>
+</ui:UXML>

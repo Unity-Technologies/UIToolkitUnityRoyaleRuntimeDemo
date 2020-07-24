@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <UnityRoyale.CardElement class="card">
+        <Style src="CardUI.uss" />
+        <ui:VisualElement name="image" class="image" style="flex-grow: 1;" />
+        <ui:VisualElement name="frame" class="frame" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;">
+            <ui:VisualElement name="stats" class="stats">
+                <ui:Label text="12" name="attack-badge" class="badge attack-badge" />
+                <ui:Label text="42" name="health-badge" class="badge health-badge" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </UnityRoyale.CardElement>
+</ui:UXML>

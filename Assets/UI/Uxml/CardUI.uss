@@ -1,0 +1,45 @@
+.card {
+    width: 104px;
+    height: 115px;
+    -unity-font: url('/Assets/UI/Fonts/LilitaOne-Regular.ttf');
+    position: absolute;
+}
+
+.frame {
+    background-image: url('/Assets/UI/Elements/ui_card_front.png');
+    flex-grow: 1;
+    overflow: hidden;
+    -unity-background-scale-mode: scale-to-fit;
+    justify-content: flex-end;
+}
+
+.stats {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.badge {
+    -unity-background-scale-mode: scale-to-fit;
+    width: 42px;
+    height: 33px;
+    -unity-text-align: middle-center;
+    color: rgba(255, 255, 255, 255);
+}
+
+.attack-badge {
+    background-image: url('/Assets/UI/Elements/icon_dmg.png');
+    padding-left: 4px;
+    padding-top: 5px;
+}
+
+.health-badge {
+    background-image: url('/Assets/UI/Elements/icon_health.png');
+}
+
+.image {
+    background-image: url('/Assets/UI/CardArt/Archers.png');
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-top: 11%;
+    margin-bottom: 11%;
+}

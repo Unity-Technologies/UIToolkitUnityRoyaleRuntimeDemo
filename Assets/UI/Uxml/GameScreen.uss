@@ -1,0 +1,30 @@
+.screen {
+    flex-grow: 1;
+}
+
+.card-panel {
+    flex-direction: row;
+}
+
+.card-back-slot {
+    background-image: url('/Assets/UI/Elements/ui_card_back.png');
+    -unity-background-scale-mode: scale-to-fit;
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    height: 100px;
+}
+
+.play-area-container {
+    flex-direction: row;
+    -unity-background-scale-mode: stretch-to-fill;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url('/Assets/UI/Elements/ui_stone_slab.png');
+    flex-grow: 1;
+    margin-left: 0;
+    margin-right: 12px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}

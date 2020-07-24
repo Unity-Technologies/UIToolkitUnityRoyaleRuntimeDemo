@@ -1,0 +1,32 @@
+.health-bar--container {
+    width: 200px;
+    height: 70px;
+}
+
+.health-bar--background {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(79, 72, 72);
+    flex-grow: 1;
+}
+
+.health-bar--filling {
+    background-image: url('/Assets/UI/Elements/ui_health_grayscale.png');
+    width: 100%;
+    height: 100%;
+    -unity-background-image-tint-color: rgb(255, 0, 0);
+    position: absolute;
+    flex-grow: 1;
+}
+
+.health-bar--frame {
+    background-image: url('/Assets/UI/Elements/ui_health_tube.png');
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    flex-grow: 1;
+}
+
+.health-bar--hidden {
+    display: none;
+}

@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="screen" class="screen">
+        <Style src="Menu.uss" />
+        <Style src="TitleScreen.uss" />
+        <ui:VisualElement name="button-panel" class="title-screen-pane">
+            <ui:Button name="start" text="Start" class="button" />
+            <ui:Button name="options" text="Options" class="button" />
+            <ui:Button name="about" text="About" class="button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

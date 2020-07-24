@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <UnityRoyale.OptionsScreen name="screen" class="screen screen--tinted">
+        <Style src="Menu.uss" />
+        <Style src="OptionsScreen.uss" />
+        <ui:VisualElement name="options-pane" class="options-pane">
+            <ui:Label text="Options" name="options-header" class="header" />
+            <ui:VisualElement name="options-container" class="options-container">
+                <ui:Toggle label="Music" name="music-toggle" text="ON" value="false" />
+                <ui:VisualElement name="speed-slider-container" class="options-speed-container">
+                    <ui:SliderInt picking-mode="Ignore" label="Speed" value="2" high-value="3" low-value="1" name="speed-slider" style="width: 206px;" />
+                    <ui:Label text="1" name="speed-value-label" class="options-speed__value" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Button name="back-button" text="Back" class="button" style="width: 195px; height: 60px;" />
+        </ui:VisualElement>
+    </UnityRoyale.OptionsScreen>
+</ui:UXML>

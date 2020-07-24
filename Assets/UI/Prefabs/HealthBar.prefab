@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1287572586156800699
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5333746804131557278}
+  - component: {fileID: 3908193733436421022}
+  - component: {fileID: 8985781176608815287}
+  m_Layer: 0
+  m_Name: HealthBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5333746804131557278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287572586156800699}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3908193733436421022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287572586156800699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf0bce6599064510a11b5f606674f065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitAnchorPosition: {x: 0, y: 3, z: 0}
+  nonUnitAnchorPosition: {x: 1.8, y: 2, z: 0}
+  worldSize: {x: 1.2, y: 0.6}
+  red: {r: 0.9882353, g: 0.13725491, b: 0.050980393, a: 1}
+  blue: {r: 0.12156863, g: 0.5176471, b: 1, a: 1}
+  isHidden: 1
+  originalHealth: 0
+  currentHealth: 0
+  anchorPosition: {x: 0, y: 0, z: 0}
+  barColor: {r: 0, g: 0, b: 0, a: 0}
+  transformToFollow: {fileID: 0}
+--- !u!114 &8985781176608815287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287572586156800699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f21c074d86024caca2a0034ce4f53f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PanelSettings: {fileID: 11400000, guid: 5adb043d2f1ac664f95f8ebd985208c5, type: 2}
+  sourceAsset: {fileID: 9197481963319205126, guid: 1d2714632fce2384cbd0bfd80058faea,
+    type: 3}

@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="screen" class="screen" style="justify-content: flex-end;">
+        <Style src="GameScreen.uss" />
+        <ui:VisualElement name="cardpanel" class="card-panel">
+            <ui:VisualElement name="backup" class="card-back-slot" />
+            <ui:VisualElement name="active" class="play-area-container" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

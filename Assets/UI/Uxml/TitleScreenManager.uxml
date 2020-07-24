@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="TitleScreen" src="TitleScreen.uxml" />
+    <ui:Template name="Options" src="Options.uxml" />
+    <ui:Template name="About" src="About.uxml" />
+    <UnityRoyale.TitleScreenManager class="screen">
+        <Style src="TitleScreenManager.uss" />
+        <ui:Instance template="TitleScreen" name="TitleScreen" class="screen" />
+        <ui:Instance template="Options" name="OptionsScreen" class="screen" style="display: none;" />
+        <ui:Instance template="About" name="AboutScreen" class="screen" style="display: none;" />
+    </UnityRoyale.TitleScreenManager>
+</ui:UXML>
