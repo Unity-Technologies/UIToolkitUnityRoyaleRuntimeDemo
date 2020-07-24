@@ -4,6 +4,8 @@ Sample project to showcase the use of UI Toolkit for Runtime based on the [Unity
 
 With this project we demo the use of UXML and USS files to build Runtime UI. Through the use of the UI Builder, you can author UI easily and see the results in the Game View when the UXML is set to a `UIDocument` Component in the scene, using a `PanelSettings` Asset to provide information such as scaling.
 
+This demo project is in development and updates/fixes will be done.
+
 Unity Royale is card-based tower defence game made to showcases URP and custom shaders, Addressables, Timeline Signals, and more.
 
 ## Instalation
