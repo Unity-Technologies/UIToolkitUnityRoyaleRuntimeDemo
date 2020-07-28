@@ -22,6 +22,7 @@ MonoBehaviour:
   m_ScreenMatchMode: 0
   m_Match: 1
   m_SortingOrder: 0
-  m_AtlasBlitShader: {fileID: 9101, guid: 0000000000000000f000000000000000, type: 0}
-  m_RuntimeShader: {fileID: 9100, guid: 0000000000000000f000000000000000, type: 0}
-  m_RuntimeWorldShader: {fileID: 9102, guid: 0000000000000000f000000000000000, type: 0}
+  m_AtlasBlitShader: {fileID: 4800000, guid: 662b00f569c02f84bbc426d4c41ceb5e, type: 3}
+  m_RuntimeShader: {fileID: 4800000, guid: 1e5f18a346ed454418f93aa7eaf55791, type: 3}
+  m_RuntimeWorldShader: {fileID: 4800000, guid: 7082954141e3ccc43bc3b217cf12e2e0,
+    type: 3}
