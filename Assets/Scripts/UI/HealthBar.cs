@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace UnityRoyale
@@ -35,15 +36,19 @@ namespace UnityRoyale
             transformToFollow = p.transform;
         }
 
-        void Start()
+        void OnEnable()
         {
             var rootVisualElement = GetComponent<UIDocument>().rootVisualElement;
             bar = rootVisualElement.Q("Bar");
-            bar.style.unityBackgroundImageTintColor = barColor;
             wholeWidget = rootVisualElement.Q("HealthBar");
+        }
+
+        private void Start()
+        {
+            bar.style.unityBackgroundImageTintColor = barColor;
             SetHealth(currentHealth);
         }
-        
+
         public void SetHealth(float newHealth)
         {
             currentHealth = newHealth;

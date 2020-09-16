@@ -8,7 +8,7 @@ namespace UnityRoyale
     {
         private VisualElement cardPanel;
 
-        void Start()
+        void OnEnable()
         {
             cardPanel = GetComponent<UIDocument>().rootVisualElement.Q("cardpanel");
             cardPanel.style.display = DisplayStyle.None;

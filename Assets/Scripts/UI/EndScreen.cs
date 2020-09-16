@@ -27,7 +27,7 @@ namespace UnityRoyale
             Instantiate(prefab, parent).winnerTeamName = winnerTeamName;
         }
 
-        void Start()
+        void OnEnable()
         {
             // Retrieving interesting elements to:
             // 1- set values
@@ -40,12 +40,16 @@ namespace UnityRoyale
             winnerIsLabel = rootVisualElement.Q<Label>("winner-is-label");
 
             winnerTeamNameLabel = rootVisualElement.Q<Label>("winner-label");
-            winnerTeamNameLabel.text = winnerTeamName + "!!";
 
             mainMenuButton = rootVisualElement.Q<Button>("main-menu-button");
 
             // Attaching callback to the button.
             mainMenuButton.RegisterCallback<ClickEvent>(ev => OnMainMenuButton());
+        }
+
+        private void Start()
+        {
+            winnerTeamNameLabel.text = winnerTeamName + "!!";
 
             DoAnimations();
         }
