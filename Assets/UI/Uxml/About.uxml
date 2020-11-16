@@ -1,7 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="Menu.uss" />
+    <Style src="AboutScreen.uss" />
     <UnityRoyale.AboutScreenOperator name="screen" class="screen screen--tinted">
-        <Style src="Menu.uss" />
-        <Style src="AboutScreen.uss" />
         <ui:Label text="Description" name="about-header" class="header" />
         <ui:ScrollView class="scroll-view">
             <ui:Label text="A card-based tower defence game made using Unity&apos;s Tower Defence assets. Built for mobile from the ground-up. Shocasing UI Toolkit at runtime. " name="about-contents" class="about-contents" />
