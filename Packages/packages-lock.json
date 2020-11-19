@@ -167,7 +167,7 @@
       }
     },
     "com.unity.ui": {
-      "version": "1.0.0-preview.11",
+      "version": "1.0.0-preview.12",
       "depth": 0,
       "source": "registry",
       "dependencies": {
