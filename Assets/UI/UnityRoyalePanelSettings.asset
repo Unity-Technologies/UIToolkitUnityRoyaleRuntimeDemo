@@ -22,6 +22,7 @@ MonoBehaviour:
   m_ScreenMatchMode: 0
   m_Match: 1
   m_SortingOrder: 0
+  m_TargetDisplay: 0
   m_ClearDepthStencil: 1
   m_ClearColor: 0
   m_ColorClearValue: {r: 0, g: 0, b: 0, a: 0}
