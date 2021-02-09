@@ -168,16 +168,17 @@
       }
     },
     "com.unity.ui": {
-      "version": "file:../../com.unity.ui/com.unity.ui",
+      "version": "1.0.0-preview.14",
       "depth": 0,
-      "source": "local",
+      "source": "registry",
       "dependencies": {
         "com.unity.modules.uielementsnative": "1.0.0",
         "com.unity.textcore": "1.0.0-preview.2"
-      }
+      },
+      "url": "https://packages.unity.com"
     },
     "com.unity.ui.builder": {
-      "version": "1.0.0-preview.11",
+      "version": "1.0.0-preview.12",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
