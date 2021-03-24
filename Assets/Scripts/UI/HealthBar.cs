@@ -39,12 +39,22 @@ namespace UnityRoyale
         void OnEnable()
         {
             var rootVisualElement = GetComponent<UIDocument>().rootVisualElement;
-            bar = rootVisualElement.Q("Bar");
-            wholeWidget = rootVisualElement.Q("HealthBar");
+            
+            // TODO remove this check after the execution order is fixed!
+            if (rootVisualElement != null)
+            {
+                bar = rootVisualElement.Q("Bar");
+                wholeWidget = rootVisualElement.Q("HealthBar");
+            }
         }
 
         private void Start()
         {
+            // TODO remove this check after the execution order is fixed!
+            if (bar == null)
+            {
+                return;
+            }
             bar.style.unityBackgroundImageTintColor = barColor;
             SetHealth(currentHealth);
         }
@@ -63,6 +73,20 @@ namespace UnityRoyale
 
         private void Update()
         {
+            // TODO remove this check after the execution order is fixed!
+            if (bar == null)
+            {
+                var rootVisualElement = GetComponent<UIDocument>().rootVisualElement;
+            
+                if (rootVisualElement != null)
+                {
+                    bar = rootVisualElement.Q("Bar");
+                    wholeWidget = rootVisualElement.Q("HealthBar");
+                    bar.style.unityBackgroundImageTintColor = barColor;
+                    SetHealth(currentHealth);
+                }
+            }
+            
             wholeWidget.EnableInClassList(HiddenHealthBarStyleClass, isHidden);
         }
 
@@ -70,6 +94,11 @@ namespace UnityRoyale
         //                     2) to leave time for wholeWidget.layout to be refreshed
         private void LateUpdate()
         {
+            // TODO remove this check after the execution order is fixed!
+            if (bar == null)
+            {
+                return;
+            }
             if (!isHidden && transformToFollow != null)
             {
                 MoveAndScaleToWorldPosition(wholeWidget, transformToFollow.position + anchorPosition, worldSize);
