@@ -81,11 +81,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.lightweight": {
-      "version": "10.1.0",
+      "version": "10.5.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.render-pipelines.universal": "10.1.0",
+        "com.unity.render-pipelines.universal": "10.5.0",
         "com.unity.postprocessing": "2.1.7"
       },
       "url": "https://packages.unity.com"
@@ -126,7 +126,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
-      "version": "1.1.24",
+      "version": "1.1.27",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -137,10 +137,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.textcore": {
-      "version": "file:../../../last_compatible/ModuleOverrides/com.unity.textcore",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
+      "version": "1.0.0-preview.3",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
     },
     "com.unity.textmeshpro": {
       "version": "3.0.6",
@@ -173,14 +174,23 @@
       }
     },
     "com.unity.ui": {
-      "version": "file:../../../last_compatible/ModuleOverrides/com.unity.ui",
+      "version": "1.0.0-preview.15",
       "depth": 0,
-      "source": "local",
+      "source": "registry",
       "dependencies": {
         "nuget.moq": "1.0.0",
         "nuget.castle-core": "1.0.1",
-        "com.unity.modules.uielementsnative": "1.0.0"
-      }
+        "com.unity.modules.uielementsnative": "1.0.0",
+        "com.unity.textcore": "1.0.0-preview.3"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.ui.builder": {
+      "version": "1.0.0-preview.15",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
     },
     "com.unity.vectorgraphics": {
       "version": "2.0.0-preview.12",
