@@ -1,0 +1,21 @@
+{
+    "name": "UITKRuntimeDemo",
+    "rootNamespace": "",
+    "references": [
+        "UnityEngine.UIElementsModule",
+        "Unity.Addressables",
+        "Unity.ResourceManager",
+        "Cinemachine",
+        "Unity.Timeline",
+        "NavMeshComponents"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

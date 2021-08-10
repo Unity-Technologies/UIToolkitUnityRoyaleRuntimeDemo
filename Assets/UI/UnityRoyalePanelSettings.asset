@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 782f629a2df6243629ea8fe2873666a4, type: 3}
   m_Name: UnityRoyalePanelSettings
   m_EditorClassIdentifier: 
-  themeUss: {fileID: 11400000, guid: f567955c754d54a108d615cb51ccbf2f, type: 2}
+  themeUss: {fileID: -4733365628477956816, guid: d759aaabe9049443383e8baa60184657,
+    type: 3}
   m_TargetTexture: {fileID: 0}
   m_ScaleMode: 0
   m_Scale: 1
